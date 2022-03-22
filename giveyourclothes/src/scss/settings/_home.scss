@@ -1,0 +1,89 @@
+@import "fonts";
+@import "colors";
+.home__right{
+ font-family: "Open Sans", sans-serif;
+}
+.home_head{
+ display: flex;
+ justify-content: space-around;
+}
+.home__img--left{
+ height: 963px;
+ width: 885px;
+}
+.home__right{
+ padding-right: 142px;
+}
+.nav__logins{
+ margin-top: 37px;
+ display: flex;
+ flex-direction: row;
+ justify-content: end;
+}
+.nav__links{
+ margin-top: 26px;
+ display: flex;
+ flex-direction: row;
+}
+.nav__logins__fonts{
+ font-size: 14px;
+ color: $yellow;
+ padding: 10px 9px 10px 9px;
+}
+.nav__logins__fonts:hover{
+ border:2px solid  #FAD648;
+}
+.nav__links__fonts{
+ font-size: 18px;
+ margin-left: 55px;
+ padding:20px 9px 20px 9px;
+
+}
+.nav__links__fonts:hover{
+ border:2px solid  $grey-home-login-font;
+}
+.home_treecolumns{
+ display: flex;
+ flex-direction: column;
+ padding-top: 219px;
+
+}
+.home_treecolumns--titlle{
+ font-size: 38px;
+ text-align: center;
+}
+.home_treecolumns--img{
+ padding-top: 25px;
+ height: 33px;
+ width: 253px;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+
+}
+.home_treecolumns--button{
+font-size: 36px;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ margin-top: 65px;
+ align-items: center;
+}
+.home_treecolumns--button li:first-child{
+ border: 2px solid grey;
+ height: 120px;
+ width: 310px;
+ text-align: center;
+ margin-right:44px;
+ line-height: 120px;
+}
+.home_treecolumns--button li:last-child{
+ border: 2px solid grey;
+ height: 120px;
+ width: 310px;
+ text-align: center;
+ line-height: 120px;
+}
+.home_treecolumns--button > li:hover{
+ background-color: #FAD648;
+}
