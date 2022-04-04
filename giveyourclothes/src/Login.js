@@ -48,17 +48,13 @@ function Login() {
     }
 
     return (
-        <div name="Login" className="home_login">
+        <div name="Zaloguj" className="home_login">
             <div className="home_login_nav">
                 <div className="home__right">
                     <nav>
                         <ul className="nav__logins">
                             <Link activeClass="active"
                                   to="Login"
-                                  spy={true}
-                                  smooth={true}
-                                  offset={-100}
-                                  duration={500}
                                   className="nav__logins__fonts">Zaloguj</Link>
                             <Link activeClass="active"
                                   to="rejestracja"

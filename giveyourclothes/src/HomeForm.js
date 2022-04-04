@@ -3,6 +3,17 @@ import facebook from "./assets/Facebook.png"
 import istagram from "./assets/Instagram.png";
 import ornament from "./assets/Decoration.svg";
 
+// function emailIsValid(email){
+//     let pattern = /\S+@S+\.\S+/;
+//     return pattern.test(email);
+// }
+// function clearMesseges(){
+//     for(let i=; i< error.length; i++){
+//         error.innerText = "";
+//     }
+//     nameInput.classList.remote("error-border");
+//     email.classList.remove("error-border");
+// }
 function HomeForm() {
         const [info, setInfo] = useState(null);
         const [error, setError] = useState(null);
@@ -13,6 +24,27 @@ function HomeForm() {
             const name = e.target.elements[0].value;
             const email = e.target.elements[1].value;
             const message = e.target.elements[2].value;
+
+            // let errorFlag = false;
+            // if(name.value.length < 1){
+            //     error[0].innerText = "Imię jest za którtkie";
+            //     nameInput.classList.add("error-border");
+            //     errorFlag = true;
+            // }
+            // if(!emailIsValid(email.value)){
+            //     error[1].innerText = "Email jest niepoprawny";
+            //     email.classList.add("error-border");
+            //     errorFlag = true;
+            // }
+            // if(message.value.length < 120){
+            //     error[2].innerText = "Messege jest za krótka";
+            //     message.classList.add("error-border");
+            //     errorFlag = true;
+            // }
+            // if(!errorFlag){
+            //       success.innerText= "Success!";
+            // }
+
 
             fetch("https://fer-api.coderslab.pl/v1/portfolio/contact", {
                 method: "POST",

@@ -1,15 +1,15 @@
 import './scss/main.scss';
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom";
 import Home from "./Home";
 
 
 function App() {
   return (
-    <BrowserRouter>
-        <div className="App">
-            <Home/>
-        </div>
-    </BrowserRouter>
+    <Router>
+            <div className="App">
+                <Home/>
+            </div>
+    </Router>
 
   );
 }
